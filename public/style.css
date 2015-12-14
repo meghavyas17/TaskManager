@@ -1,0 +1,137 @@
+body{
+	background: aliceblue;
+	font-family: sans-serif;
+}
+.hidden{
+	display: none;
+}
+h2{
+	float: left;
+    font-size: 20px;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    line-height: 36px;
+}
+.btn-primary{
+	border-color: #337ab7;
+}
+#app{
+	padding-top: 30px;
+    width: 94%;
+}
+
+#app > div{
+	overflow-x: scroll;
+    overflow-y: hidden; 
+    /* width: auto; */
+    white-space: nowrap;
+    height: 500px;
+}
+.task-list{
+	display: inline-table;
+    width: 230px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+    margin: 10px;
+}
+.task-header{
+	height: 40px;
+    background: #337ab7;
+    color: white;
+    padding: 4px 0 10px 10px;
+}
+.cards-container{
+
+}
+.card-item{
+	background: lightblue;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.edit-btn, .delete-btn, .ok-btn{
+	background: transparent;
+    border: none;
+}
+
+.actions{
+	float: right;
+}
+
+.placeholder-add-list{
+	display: block;
+    height: 40px;
+    background: black;
+    opacity: 0.7;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.list-form-wrapper.adding .placeholder-add-list{
+	display: none;
+}
+.list-form-wrapper.adding .add-list-form{
+	display: block;
+}
+.add-list-form{
+	display: none;
+}
+.list-form-wrapper{
+	display: inline-table;
+	width: 200px;
+}
+.add-list-form input[type="text"]{
+	height: 40px;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.add-list-form input[type="submit"]{
+	display: block;
+}
+
+.add-card textarea{
+	width: 100%;
+    border: none;
+    border-radius: 4px;
+    min-height: 60px;
+    background: lightblue;
+}
+.add-card{
+	margin: 10px;
+}
+.add-card .btn{
+	display: block;
+}
+.dropdown-menu{
+	right: 0px;
+	left: inherit;
+}
+.top-btn-container{
+	float: right;
+}
+.header{
+	color: darkblue;
+    font-size: 18px;
+    margin: 10px;
+}
+.delete-all-btn{
+	background: transparent;
+    outline: none;
+    border: 0;
+}
+.header >span{
+	font-size: 20px;
+	font-family: cursive;
+}
+
+p[contenteditable="true"]{
+	border: 1px solid black;
+}

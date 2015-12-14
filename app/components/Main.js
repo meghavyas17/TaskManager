@@ -211,9 +211,11 @@ var ListForm = React.createClass({
 		this.state.mode = "add";
 		this.setState(this.state);
 	},
-	handleListFormSubmit: function(){
+	handleListFormSubmit: function(ev){
 		this.props.addNewList(this.state.text)
 		this.setState({mode: "", text: ""})
+		ev.preventDefault();
+		return false
 	},
 	render: function(){
 		return (
